@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/stylez.css">
+
+  
+	<div class="container">
+		<a href="index.html">
+			<img src="images/logoFireWatch.png"
+			width="150" height="150">
+		</a>
+		  <nav>
+			<ul>
+				<li><a href="Sector1Data.html">Sector 1 </a></li>
+				<li><a href="Sector2Data.html">Sector 2 </a></li>
+				<li><a href="Sector3Data.html">Sector 3 </a></li>
+			</ul>
+		  </nav>
+	</div>
+	
+</head>
+<body>
+	  <div style="height:100px;" "background-color:#FFFFFF" class="container">
+		<canvas id="myChart"></canvas>
+	  </div>
+	  
+	  <div style="background-color:#FFFFFF; padding:10px" class="container">
+		<canvas id="chart2"></canvas>
+	  </div>
+
+  <script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+	let chart2 = document.getElementById('chart2').getContext('2d');
+
+    // Global Options
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#222';
+
+
+    let tempChart = new Chart(myChart, {
+      type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+      data:{
+        labels:['TimeStap Value', 'TimeStap Value', 'TimeStap Value', 'TimeStap Value'],
+        datasets:[{
+          label:'Temperature',
+            23,
+            87,
+            45,
+            21,
+          }],
+          //backgroundColor:'green',
+          backgroundColor:[
+            'rgba(102, 0, 255, 0.6)'
+          ],
+          borderWidth:1,
+          borderColor:'#f2f2f2',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#f2f2f2'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'Sector 4',
+          fontSize:25
+        },
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true}
+				}]
+			},
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            fontColor:'#222'
+          }
+        },
+        layout:{
+          padding:{
+            left:50,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },	
+        tooltips:{
+          enabled:true
+        }
+      }
+    });
+	
+	
+
+    let detailsChart = new Chart(chart2, {
+      type:'polarArea', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+      data:{
+        labels:['TimeStap Value', 'TimeStap Value', 'TimeStap Value'],
+        datasets:[{
+          label:'Temperature',
+          data:[
+            23,
+            87,
+            45,
+            21,
+          ],
+          //backgroundColor:'green',
+          backgroundColor:[
+            'rgba(102, 0, 255, 0.6)'
+          ],
+          borderWidth:1,
+          borderColor:'#f2f2f2',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#f2f2f2'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'Sector 4',
+          fontSize:25
+        },
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true}
+				}]
+			},
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            fontColor:'#222'
+          }
+        },
+        layout:{
+          padding:{
+            left:50,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },	
+        tooltips:{
+          enabled:true
+        }
+      }
+    });
+  </script>
+</body>
+</html>
