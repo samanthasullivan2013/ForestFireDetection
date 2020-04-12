@@ -1,0 +1,20 @@
+to install what you need:
+sudo apt-get install apache2 -y
+sudo apt-get install php libapache2-mod-php -y
+
+to start and stop the server:(you will need to enter the raspberry pi password)
+service apache2 start
+service apache2 stop 
+
+if you need to reset the password use:
+sudo raspi-config (from here just select change password)
+
+
+put website index and files in /var/www/html 
+
+if you dont have permission to edit this open the cmd then type 
+
+sudo su 
+chmod -R 777 /var/www/html
+
+and close the cmd 
