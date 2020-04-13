@@ -1,0 +1,765 @@
+<!doctype html>
+<!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js " lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Site Meta -->
+    <title>FireWatch</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet"> 
+
+	<!-- Custom & Default Styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="style.css">
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	
+	.responsive {
+	  max-width: 100%;
+	  height: auto;
+	}
+	
+	table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	  width: 100%;
+	  border: 1px solid #ffff;
+	}
+	input[type=text], select, textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+	}
+
+	input[type=submit] {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+
+	
+	</style>
+</head>
+<body class="left-menu">  
+    
+    <div class="menu-wrapper">
+        <div class="mobile-menu">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#home"><img src="images/logo-normal.png" alt=""></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#rangers" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rangers <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#rangerRoles">What do they do?</a></li>
+                                    <li><a href="#rangerDetails">Who are they?</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#sectors" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sectors <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#sector1">Sector 1</a></li>
+                                    <li><a href="#sector2">Sector 2</a></li>
+                                    <li><a href="#sector3">Sector 3</a></li>
+                                    <li><a href="#sector4">Sector 4</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#aboutFireWatch">About FireWatch</a></li>
+                                    <li><a href="#aboutTeam">About the Team</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+            </nav>
+        </div><!-- end mobile-menu -->
+
+        <header class="vertical-header">
+            <div class="vertical-header-wrapper">
+                <nav class="nav-menu">
+                    <div class="logo">
+                        <a href="#home"><img src="images/biglogo.png" alt="" ></a>
+                    </div><!-- end logo -->
+
+                    <div class="margin-block"></div>
+					<!-- Menu navigation section-->
+                    <ul class="primary-menu">
+                        <li class="child-menu"><a href="#home">Home <i class="fa fa-angle-right"></i></a>
+                        </li>
+                        <li class="child-menu"><a href="#rangers">Rangers <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <li><a href="#rangerRoles">What do they do?</a></li>
+                                    <li><a href="#rangerDetails">Who are they?</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu"><a href="#sectors">Sectors <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <li><a href="#sector1">Sector 1 <i class="fa fa-angle-right"></i></a> 
+                                        <div class="subsub-menu-wrapper">  
+                                            <ul class="subsub-menu center-content">
+                                                <li><a href="#sector1Details">Details</a></li>
+                                                <li><a href="#sector1Graph">Graph</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#sector2">Sector 2<i class="fa fa-angle-right"></i></a> 
+                                        <div class="subsub-menu-wrapper">  
+                                            <ul class="subsub-menu center-content">
+                                                <li><a href="#sector2Details">Details</a></li>
+                                                <li><a href="#sector2Graph">Graph</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#sector3">Sector 3 <i class="fa fa-angle-right"></i></a> 
+                                        <div class="subsub-menu-wrapper">  
+                                            <ul class="subsub-menu center-content">
+                                                <li><a href="#sector3Details">Details</a></li>
+                                                <li><a href="#sector3Graph">Graph</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#sector4">Sector 4 <i class="fa fa-angle-right"></i></a> 
+                                        <div class="subsub-menu-wrapper">  
+                                            <ul class="subsub-menu center-content">
+                                                <li><a href="#sector4Details">Details</a></li>
+                                                <li><a href="#sector4Graph">Graph</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                       
+                        <li class="child-menu"><a href="#about">About<i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <li><a href="#aboutFireWatch">About FireWatch</a></li>
+                                    <li><a href="#aboutTeam">About the Team</a></li>
+                                    <li><a href="#faqs">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- Menu navigation section ends-->
+                    <div class="margin-block"></div>
+
+                    <div class="menu-search">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" id = "listSearch" class="form-control" placeholder="What you are looking for?">
+                                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div><!-- end menu-search -->
+					
+					<ul class="list-group" id="mainContent">
+						<li class="list-group-item"><a href="#aboutFireWatch">About FireWatch</a></li>
+						<li class="list-group-item"><a href="#aboutTeam">About the Team</a></li>
+						<li class="list-group-item"><a href="#rangerRoles">What Do Our Rangers Do?</a></li>
+						<li class="list-group-item"><a href="#rangerDetails">Ranger Data</a></li>
+						<li class="list-group-item"><a href="#sectors">Graphs</a></li>
+						<li class="list-group-item"><a href="#faqs">FAQ</a></li>
+						
+					</ul>
+
+                    <div class="margin-block"></div>
+                </nav><!-- end nav-menu -->
+            </div><!-- end vertical-header-wrapper -->
+        </header><!-- end header -->
+    </div><!-- end menu-wrapper -->
+
+    <div id="wrapper">
+
+        <!-- video and logo on home page -->
+		<div data-role="page" id="home" class="video-section ">
+            <div class="overlay"></div>
+            <div class="home-text-wrapper relative container">
+                <div class="home-message">
+                    <img src="images/finallogo.png" alt="" class="responsive" width="600" height="400">
+                </div>
+            </div>
+        </div>
+		<!-- end video and logo on home page -->
+        <!-- start intro page -->
+        <div class="section bgcolor noover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tagline-message">
+                            <h3><mark class="rotate">Hello, Bonjour, Merhaba</mark> we are FireWatch, we provide bushfire location information in a quickly accessible form..</h3>
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end section -->
+		<!-- end intro page -->
+		<!-- start about FireWatch page -->
+		<ul class="list-group" id="mainContent">
+			  <!-- come back here -->
+		
+		<div data-role="page" id="aboutFireWatch">
+			<section class="section lb nopadtop noover">
+				<div class="container">
+					<div class="row">
+					
+						<div class="col-lg-12 col-md-9">
+							<div class="service-box m30">
+
+								<h2 style="margin-right: 2.5em;border-width: 2px;">About FireWatch</h2>
+								<p>FireWatch is an application that allows an admin of a forest park, or nature reserve to give their rangers the ability to be more aware of what's going on around them.</p>
+								<br>
+								<p>Currently we have allocated for there to be four sectors of a major park to be observed. When a temperature spike is picked up by one of our Rasberry Pi's the ranger over that sector will be alerted through the application and able to identify the issue quickly and report back to the application that it has been resovled.</p>
+								<br>
+								<p>The FireWatch website is used to gather this data to keep note of the occurances of fires throughout the park, what rangers belong in what section and just to give overall information about FireWatch.</p>
+							</div>
+						</div><!-- end col -->	
+						
+					</div><!-- end col -->
+				</div><!-- end container -->
+			</section><!-- end section -->
+		</div>
+		<!-- end about FireWatch page -->
+		<!-- start about the team page -->
+		<div data-role="page" id="aboutTeam">
+			<section class="section lb nopadtop noover">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-9">
+							<div class="service-box m30">
+								<h2 style="margin-right: 2.5em;border-width: 2px;">About the Team</h2>
+								<p>FireWatch was created as our third year group project, where we had to create a project of our own choice so long as it was three tiered.</p>
+								<p>At the time of being asked this there was a horrendous bushfire sweeping through Australia.</p>
+								<br>
+								<p>The fire situation in Australia worsened significantly at the beginning of Nov. 2019. In mid-January 2020, a wave of heavy rain finally brought relief in some areas hit by bushfires but was nowhere near sufficient to extinguish the fires. It did provide a respite for firefighters in some areas who had seen only occasional breaks in the weather in the past few months. Hotter temperatures, drought and high winds escalated the crisis again over the first weekend in February. In mid-February, an extremely heavy rain storm allowed firefighters to contain all of the fires in New South Wales (NSW) although fires continued to burn in Victoria.</p>
+								<br>
+								<p>As we watched this occur, we felt certain that we would base or project around what was happening, so this is where the idea of Firewatch came from.</p>
+								<br>
+								<p>Our team consists of Samantha O'Sullivan, Kevin Mulraney, Daniel McGlynn and Kevin Troy. We are third year students in Athlone Institute of Technology and are currently studying  Software Design in Mobile Applications and Connected Devices.</p>
+								</div>	
+						</div><!-- end col -->	
+					</div><!-- end col -->
+				</div><!-- end container -->
+			</section><!-- end section -->
+		</div>
+		<!-- end about the team page -->
+		<div data-role="page" id="rangers">
+		<!-- start ranger roles page -->
+		<div data-role="page" id="rangerRoles">
+			<section class="section lb nopadtop noover">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-9">
+							<div class="service-box m30">
+								<h2 style="margin-right: 2.5em;border-width: 2px;">What Do Our Rangers Do?</h2>
+
+								<p>Our Rangers ensure that if a fire were to break out in a park, that they will have it located and under control quickly thanks to our application.</p>
+								<br>
+								<p>Our current Ranger list consists of four Rangers, but in the future this could be expanded.</p>
+								<br>
+								<p>You can view who our current Rangers are and what sector they're in in the section below.</p>
+								</div>	
+						</div><!-- end col -->	
+					</div><!-- end col -->
+				</div><!-- end container -->
+			</section><!-- end section -->
+		</div>
+		<!-- end about ranger roles page -->
+		<!-- start ranger details page -->
+		<div data-role="page" id="rangerDetails">
+			<section class="section lb nopadtop noover">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="service-box m30">
+								<img src="images/rangericon.png" alt="" class="responsive" width="60" height="40">
+								<h4>Ranger 1</h4>
+							   <table>
+									<tr>
+										<td>Username:</td>
+										<td id = "ranger1nameid">N/A</td>
+									</tr>
+									<tr>
+										<td>Sector:</td>
+										<td id= "ranger1sectorid">N/A</td>
+									</tr>
+							   </table>
+								
+							</div>
+							
+						</div><!-- end col -->
+
+						<div class="col-lg-6 col-md-6">
+							<div class="service-box m30">
+								<img src="images/rangericon.png" alt="" class="responsive" width="60" height="40">
+								<h4>Ranger 2</h4>
+								<table>
+									<tr>
+										<td>Username:</td>
+										<td id = "ranger2nameid">N/A</td>
+									</tr>
+									<tr>
+										<td>Sector:</td>
+										<td id = "ranger2sectorid">N/A</td>
+									</tr>
+							   </table>
+							</div>
+						</div><!-- end col -->
+					</div><!-- end row -->
+				</div><!-- end container -->
+			
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="service-box m30">
+								<img src="images/rangericon.png" alt="" class="responsive" width="60" height="40">
+								<h4>Ranger 3</h4>
+							   <table>
+									<tr>
+										<td>Username:</td>
+										<td id = "ranger3nameid">N/A</td>
+									</tr>
+									<tr>
+										<td>Sector:</td>
+										<td id= "ranger3sectorid">N/A</td>
+									</tr>
+							   </table>
+								
+							</div>
+							
+						</div><!-- end col -->
+
+						<div class="col-lg-6 col-md-6">
+							<div class="service-box m30">
+								<img src="images/rangericon.png" alt="" class="responsive" width="60" height="40">
+								<h4>Ranger 4</h4>
+								<table>
+									<tr>
+										<td>Username:</td>
+										<td id = "ranger4nameid">N/A</td>
+									</tr>
+									<tr>
+										<td>Sector:</td>
+										<td id = "ranger4sectorid">N/A</td>
+									</tr>
+							   </table>
+							</div>
+						</div><!-- end col -->
+					</div><!-- end row -->
+				</div><!-- end container -->
+			</section><!-- end section -->
+		</div>
+	</div>
+		<!-- end ranger details page -->
+		<!-- start ranger details page -->
+		<div data-role="page" id="sectors">
+			<section class="section lb nopadtop noover">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-6">
+							<div class="service-box m30">
+								<h1>Sector 1</h1>
+								<script src="js/chart1.js"></script>
+								<canvas id="chartContainer" style="height: 370px; width: 100%;"></canvas>	//The ID
+								<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+								<script src="https://momentjs.com/downloads/moment.js"></script>
+								<p>This sector is located in the North-West region of our map.</p>
+								<p>It's most recent data being displayed above is giving a clear indication of the status of the sector and more specifically the temperatures within the area.</p>
+							</div>
+						</div><!-- end col -->
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-6">
+							<div class="service-box m30">
+								<h1>Sector 2</h1>
+								<script src="js/chart2.js"></script>
+								<canvas id="chartContainer2" style="height: 370px; width: 100%;"></canvas>	//The ID
+								<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+								<script src="https://momentjs.com/downloads/moment.js"></script>
+								<p>This sector is located in the North-East region of our map.</p>
+								<p>It's most recent data being displayed above is giving a clear indication of the status of the sector and more specifically the temperatures within the area.</p>
+							</div>
+						</div><!-- end col -->
+					</div><!-- end row -->
+				</div><!-- end container -->
+			
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-6">
+							<div class="service-box m30">
+								<h1>Sector 3</h1>
+								<script src="js/chart3.js"></script>
+								<canvas id="chartContaine3" style="height: 370px; width: 100%;"></canvas>	//The ID
+								<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+								<script src="https://momentjs.com/downloads/moment.js"></script>
+								<p>This sector is located in the South-West region of our map.</p>
+								<p>It's most recent data being displayed above is giving a clear indication of the status of the sector and more specifically the temperatures within the area.</p>
+							</div>
+						</div>	
+					</div><!-- end col -->
+					<div class="row">
+						<div class="col-lg-12 col-md-6">
+							<div class="service-box m30">
+								<h1>Sector 4</h1>
+								<script src="js/chart4.js"></script>
+								<canvas id="chartContaine4" style="height: 370px; width: 100%;"></canvas>	//The ID
+								<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+								<script src="https://momentjs.com/downloads/moment.js"></script>
+								<p>This sector is located in the South-East region of our map.</p>
+								<p>It's most recent data being displayed above is giving a clear indication of the status of the sector and more specifically the temperatures within the area.</p>
+							</div>
+						</div><!-- end col -->
+					</div><!-- end row -->
+				</div><!-- end container -->
+			</section><!-- end section -->
+		</div>
+		<!-- end sector graph page -->
+		<!-- start faqs page -->
+		<div data-role="page" id="faqs">
+				<section class="section lb nopadtop noover">
+				<div class="container ">
+					<div class="service-box m30">
+					<h2>FAQ</h2>
+						<div class="panel-group" id="FAQ">
+						  <!-- First Group -->
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#FAQ" href="#collapseOne">
+								  Who are we?
+								</a>
+							  </h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in">
+							  <div class="panel-body" style="overflow-x:auto;">
+								<p>We are a group of students with a passion for solving problems. We are all full-stack developers who strive to put our best work forward.
+								This is our first large project together and we hope that you like it.</p>
+								<br>
+								<table class="table table-dark">
+								  <thead>
+									<tr>
+									  <th scope="col">#</th>
+									  <th scope="col">First Name</th>
+									  <th scope="col">Last Name</th>
+									  <th scope="col">Student number</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<tr>
+									  <th scope="row">1</th>
+									  <td>Kevin</td>
+									  <td>Mulraney</td>
+									  <td>A00249365</td>
+									</tr>
+									<tr>
+									  <th scope="row">2</th>
+									  <td>Samantha</td>
+									  <td>O'sullivan</td>
+									  <td>A00255640</td>
+									</tr>
+									<tr>
+									  <th scope="row">3</th>
+									  <td>Daniel</td>
+									  <td>McGlynn</td>
+									  <td>A00252352</td>
+									</tr>
+									<tr>
+									  <th scope="row">4</th>
+									  <td>Kevin</td>
+									  <td>Troy</td>
+									  <td>A00195358</td>
+									</tr>
+								  </tbody>
+								</table>
+							  </div>
+							</div>
+						  </div>
+
+						  <!-- Second Group -->
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#FAQ" href="#collapseTwo">
+								  What is the aim of this project?
+								</a>
+							  </h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+							  <div class="panel-body">
+								The aim of this project is to craft a system that can monitor an environment across multiple layers and devices while raising awareness. Did you know that
+								<a href="https://www.bbc.com/news/world-australia-50951043">more than 11 million hectares</a> of forest was burned in this years australian fires alone?
+							  </div>
+							</div>
+						  </div>
+
+						  <!-- Third Group -->
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#FAQ" href="#collapseThree">
+								  How do I navigate this site to find what I'm looking for?
+								</a>
+							  </h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+							  <div class="panel-body">
+								The navigation bar will bring you to whatever section you want to go to.
+							  </div>
+							</div>
+						  </div>
+						  
+						  <!-- Fourth Group -->
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#FAQ" href="#collapseFour">
+								  What will I find here?
+								</a>
+							  </h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse">
+							  <div class="panel-body">
+								On this website you can find data about individual rangers, their sectors, graphed data about different zones at risk of bushfires and track the fires that happened in each sector.
+							  </div>
+							</div>
+						  </div>
+						  <!-- Fifth Group -->
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#FAQ" href="#collapseFive">
+								  What Technologies were used to make this possible?
+								</a>
+							  </h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse">
+							  <div class="panel-body">
+								
+									<h3><b>MQTT</b></h3>
+									<hr>
+									<h4>What is it?</h4>
+									<p><a href="http://mqtt.org/">MQTT</a> is a lightwight machine-to-machine (M2M)/"Internet of Things" connectivity protocol.
+									We used MQTT to connect our sensor to our android application.</p>
+									<br>
+									<h4>Why use MQTT?</h4>
+									<p>We used MQTT for its ease of implimentation, reliability and responsiveness. MQTT is lightweight, simple to understand and very powerful given its footprint
+									Projects that use sensor data often use mqtt when they want to reduce their code footprint.</p>
+									<br>
+									<h3><b>Android Studio</b></h3>
+									<hr>
+									<h4>What is it?</h4>
+									<p><a href="https://developer.android.com/studio">Android Studio</a> is the official integrated development environment for Google's Android operating system
+									It allows for easy debugging and testing while being a powerful tool to create exactly thte app you need no matter your project. For FireWatch, android studio was
+									perfect. We leveraged our experience developing for android studio to bring the best app we could</p>
+									<br>
+									<h4>Why use Android Studio?</h4>
+									<p>Android studio provides tools to help with the layout of your app while being a powerful tool for developers that is easy to debug. Android studio supports MQTT and this was perfect for our needs</p>
+									<br>
+									<h3><b>Python & Raspberry pi SenseHat</b></h3>
+									<hr>
+									<h4>What is it?</h4>
+									<p><a href="https://www.python.org/">Python</a> is a high-level, general-purpose programming language that we used for coding the SenseHat on the Raspberry pi to 
+									simulate forest fire data. The Raspberry pi is a single small board computer, useful for small projects such as home automation in the IOT. </p>
+									<br>
+									<h4>Why use Python?</h4>
+									<p>Python can be used to code the SenseHat LED board attachment for the Pi. We used Python to simulate live temperature sensor data. Python is a powerful, general purpose programming language. </p>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				
+				</div>
+				</section><!-- end section -->
+		</div>
+		<!-- end faqs page -->
+		<div data-role="page" id="contact">
+		<section class="section lb nopadtop noover">
+			<div class="container">
+				<div class="service-box m30">
+				<h2 style="margin-right: 2.5em;border-width: 2px;">Contact Us</h2>
+				<p>If you have an issue, or an enquiry about our website or application, feel free to contact us via email at FireWatchAIT@Gmail.com.</p>
+				<br>
+				<a href="mailto:firewatchait@gmail.com?Subject=webpage%20contact" target="_top">Send us an email now by clicking here!</a>
+				</p>
+				</div>
+			</div>
+			</section>
+		</div>
+		</ul>
+	</div><!-- end wrapper -->
+    <div id="wrapper">
+        <footer class="section footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4">
+                    <div class="widget clearfix">
+                        <div class="list-widget">   
+                            <ul>
+                                <li><a href="#aboutFireWatch">About us</a></li>
+                                <li><a href="#aboutTeam">Our Team</a></li>
+                                <li><a href="#contact">Contact us</a></li>
+                            </ul>
+                        </div><!-- end list-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->      
+		</div>
+			<div class="section copyrights">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-3">
+							<div class="cop-logo">
+								<img src="images/logo-normal.png" alt="">
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 text-right">
+							<div class="cop-links">
+								<ul class="list-inline">
+									<li>&copy; 2020 FireWatch | Design: <a href="https://html.design">HTML Design</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+    </div><!-- end wrapper -->
+
+    <!-- jQuery Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/rotate.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/masonry.js"></script>
+    <script src="js/masonry-4-col.js"></script>
+    <!-- VIDEO BG PLUGINS -->
+    <script src="videos/libs/swfobject.js"></script> 
+    <script src="videos/libs/modernizr.video.js"></script> 
+    <script src="videos/libs/video_background.js"></script> 
+    <script>
+        jQuery(document).ready(function($) {
+		
+		document.getElementById("mainContent").style.display = "none";
+		
+		  $("#listSearch").on("keyup", function() {
+			document.getElementById("mainContent").style.display = "block";
+			var value = $(this).val().toLowerCase();
+			$("#mainContent li").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		  });
+		
+		$.ajax({
+			type: "GET",
+			url: "data.txt",
+			dataType: "text",
+			success: function(data) {
+			
+				alert("we read in: " + data);
+				var inData = data;
+				var dataArr = inData.split(',');
+				console.log(dataArr);
+				alert(dataArr.length + " Rangers detected");
+				if(dataArr.length>=1){
+				var ranger1Arr = dataArr[0].split(" ");
+					console.log(ranger1Arr);
+					document.getElementById("ranger1name").innerHTML = ranger1Arr[0];
+					document.getElementById("ranger1sector").innerHTML = ranger1Arr[1];
+				}
+				if(dataArr.length>=2){
+					var ranger2Arr = dataArr[1].split(" ");
+					console.log(ranger2Arr);
+					document.getElementById("ranger2name").innerHTML = ranger2Arr[0];
+					document.getElementById("ranger2sector").innerHTML = ranger2Arr[1];
+				}
+				if(dataArr.length>=3){
+					var ranger3Arr = dataArr[2].split(" ");
+					console.log(ranger3Arr);
+					document.getElementById("ranger3name").innerHTML = ranger3Arr[0];
+					document.getElementById("ranger3sector").innerHTML = ranger3Arr[1];
+				}
+				if(dataArr.length>=4){
+					var ranger3Arr = dataArr[3].split(" ");
+					console.log(ranger3Arr);
+					document.getElementById("ranger4name").innerHTML = ranger4Arr[0];
+					document.getElementById("ranger4sector").innerHTML = ranger4Arr[1];
+				}
+			}
+		 });
+	
+            var Video_back = new video_background($("#home"), { 
+                "position": "absolute", //Follow page scroll
+                "z-index": "-1",        //Behind everything
+                "loop": true,           //Loop when it reaches the end
+                "autoplay": true,       //Autoplay at start
+                "muted": true,          //Muted at start
+                "mp4":"videos/video.mp4" ,     //Path to video mp4 format
+                "video_ratio": 1.7778,              // width/height -> If none provided sizing of the video is set to adjust
+                "fallback_image": "images/dummy.png",   //Fallback image path
+                "priority": "html5"             //Priority for html5 (if set to flash and tested locally will give a flash security error)
+            });
+        });
+    </script>
+
+</body>
+</html>
